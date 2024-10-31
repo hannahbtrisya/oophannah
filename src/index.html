@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherWise</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <video autoplay muted loop id="backgroundVideo">
+        <source src="Weather Radar.mp4" type="video/mp4">
+  </video>
+  <div id="country-display"></div>
+  <div id="weather-info-display"></div>
+  
+  <div class="card">
+    <header class="app-header">
+      <img src="weather (2).png" alt="Logo" class="logo">
+      <h1>WeatherWise</h1> 
+  </header>
+
+    
+    <div class="search">
+      <input type="text" id="city_input" placeholder="Enter city name">
+      <button onclick="buttonClicked()">Get Weather</button>
+    </div>
+
+    
+    <div class="weather">
+      <h1 class="temp">30°C</h1>
+      <h2 class="city">Beranang</h2>
+      <p id="local-time"></p>
+
+      <div class="details">
+        <div class="col">
+          <img src="humidity.png" alt="Humidity Icon">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="wind.png" alt="Wind Speed Icon">
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="weather-info" class="weather-info"></div>
+      <br>
+      
+      <div id="activity-recommendations"></div>
+      
+      <div id="activity-details" class="activity-details"></div>
+      
+      
+      <div id="activity-info"></div>
+      <div id="equipment-list"></div>
+    </div>
+
+    
+    <button onclick="goToChecklist()">Go to Checklist</button>    <button onclick="window.location.href='city.html'">View Favorite Cities</button>
+
+  </div>
+
+  
+  <script src="main.js"></script>
+  <script src="activities.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Cities</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="Weather Radar.mp4" type="video/mp4">
+  </video>
+    <div class="card">
+    <h1>Favorite Cities</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="addFavoriteCity(document.getElementById('cityInput').value)">Add to Favorites</button>
+
+    <!-- Display favorite cities -->
+    <h2>Your Favorite Cities:</h2>
+    <ul id="favoriteCitiesList"></ul>
+    <div id="weather-display">
+        <h2 class="city"></h2>
+        <div id="local-time"></div>
+        <div class="temp"></div>
+        <div id="weather-info"></div>
+    </div>
+    
+    <button onclick="displayFavoriteCities()">Show Favorite Cities</button>
+    <br>
+    <br>
+    <button onclick="goBack()">Back to Homepage</button>   <button onclick="goToChecklist()">Go to Checklist</button>
+</div>
+    <script src="city.js"></script>
+</body>
+</html>

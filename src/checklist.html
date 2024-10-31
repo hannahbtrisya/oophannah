@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherWise - Checklist</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="Weather Radar.mp4" type="video/mp4">
+</video>
+  <div id="message" class="message" style="display:none;"></div>
+  <div class="card">
+    <h1>Your Equipment Checklist</h1>
+    <div id="last-searched-country"></div>
+    <div id="checklist"></div>
+    <input type="text" id="new-item" placeholder="Add new item">
+    <button onclick="addCustomChecklistItem()">Add</button>
+    <button onclick="goBack()">Back to Main</button>
+  </div>
+
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+
+  <script src="checklist.js"></script>
+</body>
+</html>
